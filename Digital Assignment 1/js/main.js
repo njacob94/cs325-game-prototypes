@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    var game = new Phaser.Game(800, 800, Phaser.AUTO, 'Cowboy Click', { preload: preload, create: create, render : render });
+    var game = new Phaser.Game(800, 800, Phaser.AUTO, 'game', { preload: preload, create: create, render : render });
 
     //Inital globals
     var image;
