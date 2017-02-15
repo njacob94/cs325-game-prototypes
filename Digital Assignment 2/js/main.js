@@ -39,7 +39,7 @@ window.onload = function() {
     function create() {
 
         //White background
-        game.stage.backgroundColor = 'rgb(155, 155, 155)';
+        game.stage.backgroundColor = 'rgb(255, 255, 255)';
         //Sound
         cut = game.add.audio('cut');
 
