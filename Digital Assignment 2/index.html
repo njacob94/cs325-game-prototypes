@@ -1,0 +1,37 @@
+﻿<p>Phaser Basic Project Template</p>
+<script src="js/phaser.min.js"></script>
+<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+<script src="js/Boot.js"></script>
+<script src="js/Preloader.js"></script>
+<script src="js/MainMenu.js"></script>
+<script src="js/Game.js"></script>
+<!-- main.js must come last since it references the other ones. -->
+<script src="js/main.js"></script>
+<div id="game">&nbsp;</div>
+<div id="readme">
+<h2>Organ Surgeon</h2>
+<ul>
+<li><strong>High Concept:</strong>&nbsp;Play a surgeon trying to safely remove organs from a patient without damaging the sensative areas</li>
+<li><strong>Theme:</strong>&nbsp; Organ donar (losely)</li>
+<li><strong>Mandated Variety:</strong>&nbsp;Input: keyboard, randomness: a lot, Genre: top down, Play style: Competitor</li>
+<li><strong>Player Experience Goals:</strong>&nbsp;Trying to balance speed versus precision when removing organs.</li>
+<li><strong>Gameplay:</strong>&nbsp;The player begins in the low right with a knife, they must use the arrow keys to guide the knife to each organ and then guide the organ back to the operating table to get points. &nbsp;A player gets 10 points if they get to an organ and a 100 points + remaining time on the clock when they drop it off. &nbsp;Hitting the black blocks, representing sensative tissue, will reduce their score by 10 each time they hit it. &nbsp;</li>
+<li><strong>Prototype Goal:</strong>&nbsp;I focused on randomizing the black area and organ placement to give it some replayability, I also focused on randomizing the movement of the player somewhat by giving the velocities some random range rather then a set number.</li>
+<li><strong>Features:</strong>&nbsp;The players hand is slighty randomized in terms of how fast it moves in each direction making it harder for the player to control their movement. &nbsp;The black areas are also randomized to give it some replayability</li>
+<li><strong>Setting/Premise:</strong>&nbsp;Highly abstracted representation of a surgeon trying to remove organs from a patients body</li>
+<li><strong>Story:</strong>&nbsp;The player plays a surgeon in the ER, patients are brought to them and they have to try and remove organs as fast as possible without harming them.</li>
+<li><strong>Target Audience:</strong>&nbsp;Competing for scores with friends</li>
+<li><strong>Play Time:</strong>&nbsp;Up to a minute per round</li>
+<li><strong>Strategies:</strong>&nbsp;Trying to stick to the edges of the game board seems to help</li>
+<li><strong>Prototype Assets:</strong>&nbsp;Some assets are self made, the organs/knife/cutting sound were all taken from free sources<br />
+<ul>
+<li>Knife: <a href="http://pixelartmaker.com/art/c3620465023ae3d">Minecraft knifes</a></li>
+<li>Organs:&nbsp;<a href="https://www.shutterstock.com/image-vector/pixel-human-body-parts-icons-high-326213540">Shutterstock</a></li>
+<li>Hand:&nbsp;<a href="https://www.vectorstock.com/royalty-free-vector/pixel-hand-icons-vector-61295">Pixel hand Icons</a></li>
+<li>Cutting sound:&nbsp;<a href="http://soundbible.com/828-Blood-Squirt.html">Soundbible</a></li>
+</ul>
+</li>
+<li><strong>Prototype Closest Other Game:</strong>&nbsp;This game had no particular prototype and was built from scratch. &nbsp;Phaser's library was the only part used to learn how to use various commands</li>
+</ul>
+</div>
