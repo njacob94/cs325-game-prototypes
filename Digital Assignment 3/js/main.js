@@ -325,10 +325,7 @@ window.onload = function() {
         
         //If at least 2 marks around the square are the kind that delete 
         //and it doesn't have at least 2 marks of the same type around it then delete it
-        if(numDelete>=2 && numSafe<2){
-            deleteSound.play();
-            toDelete = true;
-        }
+        if(numDelete>=2 && numSafe<2){toDelete = true;}
 
         return toDelete;
     }
