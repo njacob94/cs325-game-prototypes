@@ -60,7 +60,7 @@ window.onload = function() {
 
         game.load.image('example', 'assets/example.png');
         
-        game.load.audio('delete', 'assets/explosion.png');
+        game.load.audio('delete', 'assets/explosion.mp3');
     }
 
     function create() {
