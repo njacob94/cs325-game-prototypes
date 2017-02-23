@@ -38,6 +38,8 @@ window.onload = function() {
     var playerTookTurn = false; //Variable for checking whether or not the player has taken their turn
     var noMoveLeft = false; //Variable for checking whether or not any moves can still be made
     var emptyMoveLeft = true;
+    
+    var deleteSound;
 
     // ---Set up code ---
     function preload () {
@@ -57,12 +59,16 @@ window.onload = function() {
         game.load.image('paperHighlight', 'assets/paperHighlight.png');
 
         game.load.image('example', 'assets/example.png');
+        
+        game.load.audio('delete', 'assets/explosion.png');
     }
 
     function create() {
 
         //White Background
         game.stage.backgroundColor = 'rgb(0, 0, 0)';
+        
+        deleteSound = game.add.audio('delete');
 
         //Arrow button creation
         buttonUp = game.add.button(750,250, 'arrowUp', moveUp, this, 2, 1, 0);
@@ -316,7 +322,10 @@ window.onload = function() {
         
         //If at least 2 marks around the square are the kind that delete 
         //and it doesn't have at least 2 marks of the same type around it then delete it
-        if(numDelete>=2 && numSafe<2){toDelete = true;}
+        if(numDelete>=2 && numSafe<2){
+            deleteSound.play();
+            toDelete = true;
+        }
 
         return toDelete;
     }
