@@ -130,7 +130,10 @@ window.onload = function() {
                 if(grid[i][j] == 'p'){toDelete = squareDeleteCheck('p','s',i,j);}
                 if(grid[i][j] == 's'){toDelete = squareDeleteCheck('s','r',i,j);}
                 //Change square to empty if we need to delete
-                if(toDelete){grid[i][j]='e';}
+                if(toDelete){
+                    deleteSound.play();
+                    grid[i][j]='e';
+                }
             }
         }
 
