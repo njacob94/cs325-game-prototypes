@@ -327,16 +327,16 @@ window.onload = function() {
 
     //Grid debugger display, all of this is commented out for now
     function render() {
-        
+        /*
         game.debug.text('Internal grid for debugging (comment out)', 700, 20);
         game.debug.text(grid[0], 700, 32);
         game.debug.text(grid[1], 700, 44);
         game.debug.text(grid[2], 700, 56);
         game.debug.text(grid[3], 700, 68);
         game.debug.text('pointerRow='+pointerRow+': pointerCol='+pointerCol, 700, 1090);
+        */      
         
         
-        /*
         game.debug.text('Welcome to Rock/Paper/Scissors draw 4', 50, 20);
         game.debug.text('Find 2 friends and each of you selects a a type to be, rock/paper/scissors', 50, 32);
         game.debug.text('Use the arrows to navigate to a square and place your mark by hitting the button when its your turn', 50, 45);
@@ -345,7 +345,7 @@ window.onload = function() {
         game.debug.text('A mark with 2 sides around it holding a mark that deletes it, is removed', 50, 84);
         game.debug.text('A mark is safe from deletion if it has at least 2 of the same mark on its side', 50, 97);
         game.debug.text('Good luck!', 50, 110);
-        */
+        
 
         var player;
         if(playerTurn == 1){player = 'Rock';}
