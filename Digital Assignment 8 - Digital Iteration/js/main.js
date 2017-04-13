@@ -549,10 +549,11 @@ window.onload = function() {
         }
         
         if(bossManaDrain){
-            game.debug.text('This boss has an aura that saps your mana!  You will love mana each round', 50, 176);
+            game.debug.text('This boss has an aura that saps your mana!  You will lose mana each round', 50, 176);
         }
         if(bossBattleOutcome == 0){
-            game.debug.text('Ouch! You get hit by the boss and take damage', 50, 189);
+            if(armorBlockedDamage){game.debug.text('You get hit. but your armor absorbs the blow', 50, 176);}
+            if(armorBlockedDamage==false){game.debug.text('Ouch! You get hit by the boss and take damage', 50, 189);}
         }
         
         if(bossBattleOutcome == 1){
